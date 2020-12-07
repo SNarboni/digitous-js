@@ -18,7 +18,7 @@ var food = "croissant is meh"
 console.log(food.replace("meh", "so good"));
 
 // 06 - Up and Down (J'ai pas trop compris l'énoncé)
-var basic = "This is Cool"
+var basic = "This is Cool";
 // var basicUp = "THIS IS COOL"
 // var basicDown = "this is cool"
 console.log(basic);
@@ -26,5 +26,12 @@ console.log(basic.toLocaleUpperCase());
 console.log(basic.toLowerCase());
 
 // 07 - Split
+var word = "banana";
+var letters = word.split("")
+console.log(letters)
+
 // 08 - Template
+var age = "21"
+var template = `I'm ${age} years old`;
+console.log(template)
 // Bonus
