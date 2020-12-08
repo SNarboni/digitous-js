@@ -38,7 +38,13 @@ console.log("- test est différent de bis : " + (test != bis));
 console.log("- test est strictement différent de bis : " + (test !== bis));
 
 // 06 - Condition
-
+var limit = 50;
+var score = 30;
+if (score >= limit) {
+    console.log("gg c'est win EZ");
+} else {
+    console.log("gros noob");
+}
 
 // 07 - Condition II
 
