@@ -89,8 +89,14 @@ switch (month) {
     default:
         console.log("Ce mois n'éxiste pas");
 }
-// Bonus III
 
+// Bonus III
+var nbr = 12.5;
+if ((nbr - Math.floor(nbr)) >= .5) {
+    console.log(Math.ceil(nbr))
+} else {
+    console.log(Math.floor(nbr))
+}
 
 // Bonus IV
 
