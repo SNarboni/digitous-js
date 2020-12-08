@@ -39,7 +39,7 @@ console.log("- test est strictement différent de bis : " + (test !== bis));
 
 // 06 - Condition
 var limit = 50;
-var score = 30;
+var score = 60;
 if (score >= limit) {
     console.log("gg c'est win EZ");
 } else {
@@ -47,15 +47,21 @@ if (score >= limit) {
 }
 
 // 07 - Condition II
-var password = "azerty"
-if (password.length >= 10) {
-    console.log("tu est protégé")
+var password = "azerty";
+if (password.length >= 5) {
+    console.log("tu est protégé");
 } else {
-    console.log("trouve un mot de passe plus compliqué")
+    console.log("trouve un mot de passe plus compliqué");
 }
 
 // 08 - Condition III
-
+if (score >= limit && password.length >= 5) {
+    console.log("t'es un champion");
+} else if (score >= limit || password.length >= 5) {
+    console.log("bien mais pas ouff");
+} else {
+    console.log("ya un pb quelque part");
+}
 
 // Bonus I
 
