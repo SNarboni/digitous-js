@@ -11,7 +11,7 @@ console.log(stringified);
 console.log(stringified.length);
 
 // 03 - Round
-var num = 1.5;
+var num = 5;
 var rounded = Math.round(num);
 console.log(rounded);
 
@@ -64,11 +64,31 @@ if (score >= limit && password.length >= 5) {
 }
 
 // Bonus I
-
-
+var random = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+if (random === 6) {
+    console.log("GG c'est win")
+} else {
+    console.log("RIP")
+}
 // Bonus II
+var month = "Novembre";
 
-
+switch (month) {
+    case "Janvier": case "Février": case "Mars":
+        console.log("Hiver");
+        break;
+    case "Avril": case "Mai": case "Juin":
+        console.log("Printemps");
+        break;
+    case "Juillet": case "Aôut": case "Septembre":
+        console.log("Été");
+        break;
+    case "Octobre": case "Novembre": case "Décembre":
+        console.log("Automne");
+        break;
+    default:
+        console.log("Ce mois n'éxiste pas");
+}
 // Bonus III
 
 
