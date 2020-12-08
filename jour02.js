@@ -47,7 +47,12 @@ if (score >= limit) {
 }
 
 // 07 - Condition II
-
+var password = "azerty"
+if (password.length >= 10) {
+    console.log("tu est protégé")
+} else {
+    console.log("trouve un mot de passe plus compliqué")
+}
 
 // 08 - Condition III
 
