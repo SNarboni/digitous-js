@@ -16,7 +16,14 @@ var rounded = Math.round(num);
 console.log(rounded);
 
 // 04 - Arithmétique
-
+var test = 12;
+var bis = 5;
+console.log("Pour l'addition = " + (test + bis));
+console.log("Pour la soustraction = " + (test - bis));
+console.log("Pour la multiplication = " + (test * bis));
+console.log("Pour la division = " + (test / bis));
+console.log("Pour la puissance = " + (test ** bis));
+console.log("Pour le reste = " + (test % bis));
 
 // 05 - Comparaison
 
