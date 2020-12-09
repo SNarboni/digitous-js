@@ -17,25 +17,30 @@ console.log('Ajout de "chair": ' + objects);
 objects.pop("lamp");
 console.log('supp de "lamp": ' + objects);
 
-objects.push("laptop");
+objects.shift("laptop");
 console.log('Ajout de "laptop": ' + objects);
 
 objects.shift("chair");
 console.log('supp de "chair": ' + objects);
 
-// objects.pop("chair");
-// console.log(objects);
-
 // 04 - Order
+var numbers = [4, 10, 8, 12, 6]
+console.log("A l'envers: " + numbers.reverse())
+console.log("Croissant: " + numbers.sort((a, b) => a - b));
 
 // 05 - Boucle
 
+
 // 06 - Reverse
+
 
 // Bonus
 
+
 // Bonus II
 
+
 // Bonus III
+
 
 // Bonus IV
