@@ -64,12 +64,15 @@ if (score >= limit && password.length >= 5) {
 }
 
 // Bonus I
-var random = Math.floor(Math.random() * (6 - 1 + 1)) + 1;
+var min = 1;
+var max = 6;
+var random = Math.floor(Math.random() * (max - min + 1)) + min;
 if (random === 6) {
     console.log("GG c'est win")
 } else {
     console.log("RIP")
 }
+
 // Bonus II
 var month = "Novembre";
 
@@ -93,10 +96,9 @@ switch (month) {
 // Bonus III
 var nbr = 12.5;
 if ((nbr - Math.floor(nbr)) >= .5) {
-    console.log(Math.ceil(nbr))
+    console.log(Math.ceil(nbr));
 } else {
-    console.log(Math.floor(nbr))
+    console.log(Math.floor(nbr));
 }
 
 // Bonus IV
-
