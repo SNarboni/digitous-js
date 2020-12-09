@@ -39,11 +39,14 @@ console.log("Croissant: " + numbers.sort((a, b) => a - b));
 // 05 - Boucle
 console.log("--------05--------");
 
+var total = 0;
 var limit = 10;
-for (var total = 0; total !== limit; total++) {
-    console.log("inside: " + total)
+for (var i = 1; i <= 10; i++) {
+    console.log("i = " + i);
+    total += i;
+    console.log("total = " + total);
 }
-console.log("outside: " + total)
+console.log("result = " + total);
 
 // 06 - Reverse
 console.log("--------06--------");
@@ -78,6 +81,17 @@ for (var nbr = 1; nbr <= 100; nbr++) {
 
 // Bonus II
 console.log("--------B2--------");
+var total = 0;
+var limit = 10;
+var i = 0;
+while (i !== 10) {
+    i++;
+    console.log("i = " + i);
+    total += i;
+    console.log("total = " + total);
+}
+console.log("result = " + total);
+
 
 
 
