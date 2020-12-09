@@ -97,6 +97,9 @@ console.log("result = " + total);
 
 // Bonus III
 console.log("--------B3--------");
+var promo = ["Ahmed", "Mohammed", "Houra", "Mohamad Bailo", "Saurav", "Kitty", "Elisabeth", "Nicolas", "Yeshi Tsering", "Mahmoudou", "Allan", "Ewa", "Mosindo", "Hassan", "Sébastien", "Damir", "Hadama", "Thi", "Mohamed", "Atif",];
+var dée = Math.floor(Math.random() * (19 - 0 + 1) + 0);
+console.log("Et le gagnant.e est : " + promo[dée]);
 
 
 
