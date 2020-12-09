@@ -36,6 +36,16 @@ for (var total = 0; total !== limit; total++) {
 console.log("outside: " + total)
 
 // 06 - Reverse
+function retourne(seb) {
+    var retournemot = "";
+    for (var i = seb.length - 1; i >= 0; i--) {
+        retournemot = retournemot + seb[i];
+    }
+    return retournemot;
+
+}
+console.log(retourne("Hello konexio !"));
+
 
 
 // Bonus
