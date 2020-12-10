@@ -74,9 +74,10 @@ for (var nbr = 1; nbr <= 100; nbr++) {
     } else if (nbr % 5 === 0) {
         affiche = 'buzz';
     } else if (nbr % 7 === 0) {
-        affiche = 'coucou';
+        console.log('')
     }
-    console.log(nbr + " : " + affiche);
+    console.log(`${nbr} : ${affiche}`);
+
 }
 
 // Bonus II
