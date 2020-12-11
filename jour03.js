@@ -76,7 +76,7 @@ for (var nbr = 1; nbr <= 100; nbr++) {
     } else if (nbr % 7 === 0) {
         console.log('')
     }
-    console.log(`${nbr} : ${affiche}`);
+
 
 }
 
@@ -100,6 +100,10 @@ console.log("result = " + total);
 console.log("--------B3--------");
 var promo = ["Ahmed", "Mohammed", "Houra", "Mohamad Bailo", "Saurav", "Kitty", "Elisabeth", "Nicolas", "Yeshi Tsering", "Mahmoudou", "Allan", "Ewa", "Mosindo", "Hassan", "Sébastien", "Damir", "Hadama", "Thi", "Mohamed", "Atif",];
 var dée = Math.floor(Math.random() * (19 - 0 + 1) + 0);
+while (dée === 14) {
+    console.log("tkt")
+    dée = Math.floor(Math.random() * (19 - 0 + 1) + 0);
+}
 console.log("Et le gagnant.e est : " + promo[dée]);
 
 
