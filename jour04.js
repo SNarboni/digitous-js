@@ -12,6 +12,7 @@ if (cat.isCute === true) {
 }
 
 console.log("-------------------")
+
 // 02 - Combine
 console.log("----EXO 02----")
 
@@ -30,6 +31,7 @@ console.log(cat.age)
 console.log(cat2.isCute)
 
 console.log("-------------------")
+
 // 03 - Even
 console.log("----EXO 03----")
 
@@ -46,6 +48,7 @@ checkIfEven(4);
 checkIfEven(5);
 
 console.log("-------------------")
+
 // 04 - Compare
 console.log("----EXO 04----")
 
@@ -64,6 +67,7 @@ compare(3, 4)
 compare(2, 2)
 
 console.log("-------------------")
+
 // 05 - Add Up
 console.log("----EXO 05----")
 
@@ -81,6 +85,7 @@ addUp(22)
 addUp(78)
 
 console.log("-------------------")
+
 // 06 - Time
 console.log("----EXO 06----")
 
@@ -104,14 +109,32 @@ format(120)
 format(120 * 8)
 
 console.log("-------------------")
+
 // ⭐ Bonus
 console.log("----EXO Bonus----")
 
-function generatePassword 
+function generatePassword(num) {
+    var alph = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",]
+    var i = 0;
+    var result = "";
+    while (num !== i) {
+        i++;
+        var dée = Math.floor(Math.random() * alph.length);
+        result += alph[dée];
+    } if (num < 6 || num > 15) {
+        console.log("error")
+    } else {
+        console.log(result)
+    }
+}
+generatePassword(2)
 
 console.log("-------------------")
+
 // ⭐ Bonus II
 console.log("----EXO Bonus II----")
 
 
 console.log("-------------------")
+
+
