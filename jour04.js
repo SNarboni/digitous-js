@@ -50,13 +50,35 @@ console.log("-------------------")
 console.log("----EXO 04----")
 
 function compare(num1, num2) {
-
+    if (num1 > num2) {
+        console.log("num1 is bigger")
+    } else if (num2 > num1) {
+        console.log("num2 is bigger")
+    } else {
+        console.log("both are the same")
+    }
 }
+
+compare(4, 3)
+compare(3, 4)
+compare(2, 2)
 
 console.log("-------------------")
 // 05 - Add Up
 console.log("----EXO 05----")
 
+function addUp(num) {
+    var result = num;
+    while (num !== 1) {
+        num--;
+        result = num + result;
+    }
+    console.log("Le résultat est : " + result);
+}
+
+addUp(12)
+addUp(22)
+addUp(78)
 
 console.log("-------------------")
 // 06 - Time
