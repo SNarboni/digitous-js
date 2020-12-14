@@ -84,6 +84,24 @@ console.log("-------------------")
 // 06 - Time
 console.log("----EXO 06----")
 
+function format(num) {
+    var seconde = 0;
+    var minute = 0;
+    var heur = 0;
+    while (num > 60) {
+        minute++;
+        num = num - 60;
+    }
+    while (minute > 60) {
+        heur++;
+        minute = minute - 60;
+        seconde = num;
+    }
+    console.log(`${heur}:${minute}:${seconde}`)
+}
+format(3700)
+format(120)
+format(120 * 8)
 
 console.log("-------------------")
 // ⭐ Bonus
