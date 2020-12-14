@@ -62,9 +62,7 @@ function compare(num1, num2) {
     }
 }
 
-compare(4, 3)
-compare(3, 4)
-compare(2, 2)
+console.log(compare(Math.floor(Math.random() * 100 + 1), Math.floor(Math.random() * 100 + 1)))
 
 console.log("-------------------")
 
@@ -107,7 +105,6 @@ function format(num) {
 format(3700)
 format(120)
 format(120 * 8)
-
 console.log("-------------------")
 
 // ⭐ Bonus
@@ -117,23 +114,46 @@ function generatePassword(num) {
     var alph = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",]
     var i = 0;
     var result = "";
+    var error = "error";
     while (num !== i) {
         i++;
         var dée = Math.floor(Math.random() * alph.length);
         result += alph[dée];
     } if (num < 6 || num > 15) {
-        console.log("error")
+        return error
     } else {
-        console.log(result)
+        return result
     }
 }
-generatePassword(2)
+
+for (var j = 0; j <= 18; j += 2) {
+    console.log(`Mot de passe de ${j} caractères : ${generatePassword(j)}`)
+}
 
 console.log("-------------------")
 
 // ⭐ Bonus II
 console.log("----EXO Bonus II----")
 
+function launchDice(numberOfDice) {
+    var dée = null;
+    var result = 0;
+    for (var i = 0; i <= numberOfDice; i++) {
+        dée = Math.floor(Math.random() * (6 + 1));
+        result = result + dée;
+    }
+    return result
+}
+
+var j1 = launchDice(5);
+var j2 = launchDice(5);
+if (j1 > j2) {
+    console.log("le joueur 1 à eu plus de luck")
+} else if (j1 < j2) {
+    console.log("le joueur 2 à eu plus de luck")
+} else {
+    console.log("égalité parfaite")
+}
 
 console.log("-------------------")
 
