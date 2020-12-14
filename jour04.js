@@ -88,13 +88,13 @@ function format(num) {
     var seconde = 0;
     var minute = 0;
     var heur = 0;
-    while (num > 60) {
+    while (num >= 60) {
         minute++;
         num = num - 60;
-    }
-    while (minute > 60) {
-        heur++;
-        minute = minute - 60;
+        if (minute >= 60) {
+            heur++;
+            minute = minute - 60;
+        }
         seconde = num;
     }
     console.log(`${heur}:${minute}:${seconde}`)
@@ -107,6 +107,7 @@ console.log("-------------------")
 // ⭐ Bonus
 console.log("----EXO Bonus----")
 
+function generatePassword 
 
 console.log("-------------------")
 // ⭐ Bonus II
