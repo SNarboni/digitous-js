@@ -148,11 +148,11 @@ function launchDice(numberOfDice) {
 var j1 = launchDice(5);
 var j2 = launchDice(5);
 if (j1 > j2) {
-    console.log("le joueur 1 à eu plus de luck")
-} else if (j1 < j2) {
-    console.log("le joueur 2 à eu plus de luck")
+    console.log(`joueur 1 (${j1}) est supérieur à joueur 2 (${j2})`)
+} else if (j2 > j1) {
+    console.log(`joueur 2 (${j2}) est supérieur à joueur 1 (${j1})`)
 } else {
-    console.log("égalité parfaite")
+    console.log(`Egalité parfaite! j1 = ${j1}, j2 = ${j2}`)
 }
 
 console.log("-------------------")
