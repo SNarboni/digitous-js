@@ -4,8 +4,12 @@ function multiply(num1) {
     var nombre = parseInt(num1);
     for (var i = 1; i <= 10; i++) {
         result = nombre * i;
-        console.log(` ${nombre} * ${i} = ${result} `)
+        console.log(` ${nombre} x ${i} = ${result} `)
     }
 }
 
-console.log(multiply(process.argv[2]))
+if (process.argv.length === 3) {
+    multiply(process.argv[2]);
+} else {
+    console.log("error");
+}

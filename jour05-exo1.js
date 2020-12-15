@@ -21,5 +21,8 @@ function calculate(num1, op, num2) {
     }
     return result
 }
-console.log(calculate(process.argv[2], process.argv[3], process.argv[4]))
-console.log(process.argv)
+if (process.argv.length === 5) {
+    console.log(calculate(process.argv[2], process.argv[3], process.argv[4]));
+} else {
+    console.log("error")
+}
