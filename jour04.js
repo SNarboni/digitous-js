@@ -154,7 +154,6 @@ if (j1 > j2) {
 } else {
     console.log(`Egalité parfaite! j1 = ${j1}, j2 = ${j2}`)
 }
-
 console.log("-------------------")
 
 
