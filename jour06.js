@@ -12,11 +12,9 @@ function calculateAge(string) {
     var date = new Date(string);
     var diff = date - Date.now();
     var age = new Date(diff);
-    console.log("date : " + date);
-    console.log("diff : " + diff);
-    console.log("age : " + age);
     console.log((Math.abs(age.getUTCFullYear() - 1970)) - 1, "year");
 }
 calculateAge("1998-05-09")
 
 //03 - Validator
+
