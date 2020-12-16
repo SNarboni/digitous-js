@@ -16,14 +16,6 @@ function addition(num1) {
     }
 }
 
-if (process.argv.length === 3) {
-    multiply(process.argv[2])
-    addition(process.argv[2])
-
-} else {
-    console.log("error")
-}
-
 module.exports = {
     multiply,
     addition,

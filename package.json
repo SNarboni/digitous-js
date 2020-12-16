@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SNarboni/digitous-js/issues"
   },
-  "homepage": "https://github.com/SNarboni/digitous-js#readme"
+  "homepage": "https://github.com/SNarboni/digitous-js#readme",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
 }

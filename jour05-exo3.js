@@ -1,3 +1,8 @@
 var { multiply, addition } = require("./utils/table-utils")
 
-addition(2)
+if (process.argv.length !== 4) {
+    console.log("error")
+} else {
+    multiply(process.argv[2])
+    addition(process.argv[3])
+}
