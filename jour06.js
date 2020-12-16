@@ -2,7 +2,7 @@
 
 function formatDate(string) {
     var date = new Date(string)
-    console.log(`La date est : ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`)
+    console.log(`La date est : ${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`)
 }
 formatDate("2020-12-15")
 
@@ -10,9 +10,9 @@ formatDate("2020-12-15")
 
 function calculateAge(string) {
     var date = new Date(string);
-    var diff = date - Date.now();
+    var diff = Date.now() - date;
     var age = new Date(diff);
-    console.log((Math.abs(age.getUTCFullYear() - 1970)) - 1, "year");
+    console.log((age.getFullYear() - 1970), "year");
 }
 calculateAge("1998-05-09")
 

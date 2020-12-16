@@ -1,7 +1,7 @@
 {
-  "name": "digitous",
+  "name": "npm_package_js",
   "version": "1.0.0",
-  "description": "",
+  "description": "exo js",
   "main": "boucle02.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/SNarboni/digitous-js.git"
   },
-  "author": "",
+  "author": "seb",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SNarboni/digitous-js/issues"
