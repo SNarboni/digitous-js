@@ -79,21 +79,39 @@ console.log("----------------------------")
 //04-
 function swap(string) {
     var mot = string;
-    var alphMaj = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",]
-    var alphMin = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",]
-    var count = 0;
+    var count = "";
     var letter = "";
     for (var i = 0; i < mot.length; i++) {
         letter = mot.charAt(i);
         if (letter === letter.toUpperCase()) {
-
+            count += letter.toLowerCase();
         } else if (letter == letter.toLowerCase()) {
+            count += letter.toUpperCase();
         }
     }
+    return count
 }
 
-swap("this iS a TeSt 523 Now!")
+console.log(swap("Hello World"))
 
+//bonus
+
+function makeItSpongeBob(string) {
+    var mot = string.toLowerCase();
+    var count = "";
+    var result = "";
+    for (var i = 0; i < mot.length; i++) {
+        if (i % 2 === 1) {
+            count = mot[i].toUpperCase();
+            result = result + count;
+        } else {
+            count = mot[i].toLowerCase();
+            result = result + count;
+        }
+    }
+    console.log(result)
+}
+makeItSpongeBob("Javascript is easy")
 
 // var strings = 'this iS a TeSt 523 Now!';
 // var i = 0;
