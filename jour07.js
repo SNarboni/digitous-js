@@ -1,15 +1,3 @@
-// function sortLetters(string) {
-//     var mot = string;
-//     var alph = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",]
-//     for (var i = 0; i <= ; i++) {
-//         var lettre = ;
-
-//     }
-// }
-
-// sortLetters("coucou")
-
-// 01 - Alphabet
 function sortLetters(string) {
     var mot = string;
     var falseTable = [];
@@ -93,6 +81,8 @@ function swap(string) {
 }
 
 console.log(swap("Hello World"))
+console.log("----------------------------")
+
 
 //bonus
 
@@ -112,21 +102,56 @@ function makeItSpongeBob(string) {
     console.log(result)
 }
 makeItSpongeBob("Javascript is easy")
+console.log("----------------------------")
 
-// var strings = 'this iS a TeSt 523 Now!';
-// var i = 0;
-// var character = '';
-// while (i <= strings.length) {
-//     character = strings.charAt(i);
-//     if (!isNaN(character * 1)) {
-//         alert('character is numeric');
-//     } else {
-//         if (character == character.toUpperCase()) {
-//             alert('upper case true');
-//         }
-//         if (character == character.toLowerCase()) {
-//             alert('lower case true');
-//         }
-//     }
-//     i++;
-// }
+
+// Bonus II
+function compare(a, b) {
+    if (a.toLowerCase() > b.toLowerCase()) {
+        return 1;
+    }
+    if (a.toLowerCase() < b.toLowerCase()) {
+        return -1;
+    }
+    return 0;
+}
+
+function sortLetters2(string) {
+    var mot = string;
+    var falseTable = [];
+    console.log("Votre mot : " + mot)
+    for (var i = 0; i < mot.length; i++) {
+        falseTable.push(mot[i])
+    }
+    console.log("Et dans l'ordre : " + falseTable.sort(compare).join(""))
+}
+sortLetters2("Konexio")
+console.log("----------------------------")
+
+//bonus III 
+
+function countEach(string) {
+    var mot2 = string;
+    var i = 0;
+    var countx = 0;
+    var counto = 0;
+    while (i <= mot2.length) {
+        if (mot2[i] === "x") {
+            countx++;
+        } else if (mot2[i] === "o") {
+            counto++;
+        }
+        i++;
+    }
+    if ((countx + counto) !== mot2.length) {
+        console.log("il faut mettre autant de x que o")
+    } else if (countx == counto) {
+        console.log(`il y a ${countx} x et ${counto} o donc vrai`)
+    } else {
+        console.log(`il y a ${countx} x et ${counto} o donc faux`)
+    }
+}
+countEach("xxxoooox")
+countEach("xox")
+countEach("xoxoxp")
+countEach("dafafafp")
