@@ -9,17 +9,17 @@
 
 // sortLetters("coucou")
 
-//01 - Alphabet
-// function sortLetters(string) {
-//     var mot = string;
-//     var falseTable = [];
-//     console.log("Votre mot : " + mot)
-//     for (var i = 0; i < mot.length; i++) {
-//         falseTable.push(mot[i])
-//     }
-//     console.log("Et dans l'ordre : " + falseTable.sort())
-// }
-// sortLetters("coucou")
+// 01 - Alphabet
+function sortLetters(string) {
+    var mot = string;
+    var falseTable = [];
+    console.log("Votre mot : " + mot)
+    for (var i = 0; i < mot.length; i++) {
+        falseTable.push(mot[i])
+    }
+    console.log("Et dans l'ordre : " + falseTable.sort().join(""))
+}
+sortLetters("konexio")
 
 //02 - XOXO
 console.log("----------------------------")
@@ -75,3 +75,40 @@ function checkPal(string) {
 console.log(checkPal("racecar"));
 console.log(checkPal("laptop"));
 console.log("----------------------------")
+
+//04-
+function swap(string) {
+    var mot = string;
+    var alphMaj = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",]
+    var alphMin = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",]
+    var count = 0;
+    var letter = "";
+    for (var i = 0; i < mot.length; i++) {
+        letter = mot.charAt(i);
+        if (letter === letter.toUpperCase()) {
+
+        } else if (letter == letter.toLowerCase()) {
+        }
+    }
+}
+
+swap("this iS a TeSt 523 Now!")
+
+
+// var strings = 'this iS a TeSt 523 Now!';
+// var i = 0;
+// var character = '';
+// while (i <= strings.length) {
+//     character = strings.charAt(i);
+//     if (!isNaN(character * 1)) {
+//         alert('character is numeric');
+//     } else {
+//         if (character == character.toUpperCase()) {
+//             alert('upper case true');
+//         }
+//         if (character == character.toLowerCase()) {
+//             alert('lower case true');
+//         }
+//     }
+//     i++;
+// }
